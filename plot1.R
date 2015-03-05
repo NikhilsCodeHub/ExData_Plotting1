@@ -17,8 +17,6 @@ data<-tbl_df(data)
 # filter data from given date range
 data<-filter(data, Date>=ymd("2007-02-01") & Date<=ymd("2007-02-02"))
 
-# Convert Time using hms() from lubridate
-data$Time<-hms(data$Time)
 
 # open device png for plotting
 png("plot1.png", width=480, height=480)
