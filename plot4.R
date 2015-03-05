@@ -19,7 +19,6 @@ data<-filter(data, Date>=ymd("2007-02-01") & Date<=ymd("2007-02-02"))
 
 data<-mutate(data, DateTime=ymd_hms(paste(Date, Time)))
 
-# data<-select(data, DateTime, Sub_metering_1:Sub_metering_3)
 
 # open device png for plotting
 png("plot4.png", width=480, height=480)

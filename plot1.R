@@ -20,7 +20,9 @@ data<-filter(data, Date>=ymd("2007-02-01") & Date<=ymd("2007-02-02"))
 
 # open device png for plotting
 png("plot1.png", width=480, height=480)
+
 # Draw the required histogram
 hist(data$Global_active_power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
+
 # Close device
 dev.off()
